@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class a1 : MonoBehaviour
@@ -16,15 +17,15 @@ public class a1 : MonoBehaviour
     // Start is called before the first frame update
     public void OnGUI()
     {
-         //标题
+        //标题
         //GUI.Label(rect,"苏菲大女王", style);
         //开始，结束，设置
-        GUI.Button(rect1, "开始游戏", buttonstyle);
-        GUI.Button(rect2, "退出游戏", buttonstyle);
-        GUI.Button(rect3, "设置游戏", buttonstyle);
         if (GUI.Button(rect1, "开始游戏", buttonstyle))
         {
-            Debug.Log("按下了");
+            SceneManager.LoadScene("GameScene");
         }
+        GUI.Button(rect2, "退出游戏", buttonstyle);
+        GUI.Button(rect3, "设置游戏", buttonstyle);
+        
     }
 }
