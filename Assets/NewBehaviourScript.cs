@@ -18,10 +18,12 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float h=Input.GetAxis("Horizontal");
-
-
-        if(h>0)
+        move();
+    }
+    void move()
+    {
+        float h = Input.GetAxis("Horizontal");
+        if (h > 0)
         {
             Renderer.flipX = false;
         }
@@ -29,9 +31,8 @@ public class NewBehaviourScript : MonoBehaviour
         {
             Renderer.flipX = true;
         }
-
-        rb.velocity = new Vector2(h*speed, rb .velocity.y);
-        if(Input.GetKeyDown(KeyCode.Space))
+        rb.velocity = new Vector2(h * speed, rb.velocity.y);
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpspeed);
         }
