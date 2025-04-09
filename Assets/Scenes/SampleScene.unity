@@ -703,10 +703,10 @@ MonoBehaviour:
   nowvalue: 0
   rRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
+    x: 176.96
+    y: 63.5
+    width: 94.5
+    height: 60.5
 --- !u!4 &1445273688
 Transform:
   m_ObjectHideFlags: 0
@@ -915,16 +915,16 @@ MonoBehaviour:
     m_StretchHeight: 0
   btrect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
+    x: 554
+    y: 318.1
+    width: 84
+    height: 48.3
   rRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
+    x: 180
+    y: 75.6
+    width: 84
+    height: 48.3
 --- !u!4 &1643680568
 Transform:
   m_ObjectHideFlags: 0

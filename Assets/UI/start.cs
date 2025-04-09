@@ -56,7 +56,8 @@ public class start : MonoBehaviour
         }
         if (GUI.Button(rect2, "退出游戏", buttonstyle))
         {
-            Application.Quit();  // 退出游戏
+            //Application.Quit();  // 退出游戏
+            UnityEditor.EditorApplication.isPlaying = false;
         }
         if (GUI.Button(rect3, "设置游戏", buttonstyle))
         {
