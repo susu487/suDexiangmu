@@ -54,3 +54,61 @@ public class shezhi : MonoBehaviour
         }
     }
 }
+
+//第一种写法-------------------------------------------------------------------
+
+//class danli
+//{
+//    private static danli instance;
+//    public static danli Instance
+//    {
+//        get
+//        {
+//            if (instance == null)
+//            {
+//                instance = new danli();
+//            }
+//            return instance;
+//        }
+//    }
+
+//    public void 要干的事()
+//    {
+//        //以后就这么用：
+//        danli.Instance.要干的事111();
+//    }
+//    public void 要干的事111()
+//    {
+//        //blablablabla
+//    }
+//}
+
+//第二种写法------------------------------------------------------------------------
+//class danli
+//{
+//    // 在类加载时立即创建实例
+//    private static readonly danli instance = new danli();
+
+//    // 构造函数私有化，防止外部创建实例
+//    private danli() { }
+
+//    // 提供一个公共的静态方法来获取唯一实例
+//    public static danli Instance
+//    {
+//        get
+//        {
+//            return instance;
+//        }
+//    }
+
+//    public void 要干的事()
+//    {
+//        // 以后就这么用：
+//        danli.Instance.要干的事111();
+//    }
+
+//    public void 要干的事111()
+//    {
+//        // blablablabla
+//    }
+//}

@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &730072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -877,6 +877,12 @@ MonoBehaviour:
     width: 100
     height: 30
   nowvalue: 0
+  rRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
 --- !u!4 &1445273688
 Transform:
   m_ObjectHideFlags: 0
@@ -908,7 +914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1643680567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -947,6 +953,8 @@ MonoBehaviour:
     height: 40
   name: 
   password: 
+  admin: admin
+  adminpassword: 888888
   style1:
     m_Name: 
     m_Normal:
@@ -1081,6 +1089,18 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
+  btrect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  rRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
 --- !u!4 &1643680568
 Transform:
   m_ObjectHideFlags: 0
