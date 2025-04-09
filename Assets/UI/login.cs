@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -41,32 +40,31 @@ public class login : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        hideme();
+        hideme();  // 隐藏登录界面，避免显示在初始时
     }
+
     private void OnGUI()
     {
-        Boolean a=GUI.Button(btrect, "登录");
-        
-        GUI.Label(nameRect, "请输入用户名",style1);
-        GUI.Label(passwordRect, "请输入密码",style2);
-        name=GUI.TextField(inputname, name);
-        password=GUI.TextField(intputpassword, password);
-        if (name.Equals(admin))
+        // 登录按钮
+        Boolean a = GUI.Button(btrect, "登录");
+
+        // 显示输入框和标签
+        GUI.Label(nameRect, "请输入用户名", style1);
+        GUI.Label(passwordRect, "请输入密码", style2);
+        name = GUI.TextField(inputname, name);
+        password = GUI.PasswordField(intputpassword, password, '*'); // 使用星号显示密码
+
+        if (a && name.Equals(admin) && password.Equals(adminpassword))
         {
-            if (password.Equals(adminpassword))
-            {
-                if (a)
-                {
-                    SceneManager.LoadScene("GameScene");
-                }
-                
-            }
+            // 登录成功，加载场景
+            SceneManager.LoadScene("GameScene");
         }
-        if( GUI.Button(rRect, "返回上一级"))
+
+        // 返回按钮
+        if (GUI.Button(rRect, "返回上一级"))
         {
             hideme();
             start.showme();
         }
-
     }
 }
