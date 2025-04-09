@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class a3 : MonoBehaviour
+public class shezhi : MonoBehaviour
 {
-    private static a3 instance;
+    private static shezhi instance;
     public static void showme()
     {
         if (instance != null)
@@ -27,6 +27,11 @@ public class a3 : MonoBehaviour
     public Rect rect1;
     public Rect rect2;
     public Rect rect3;
+    public Rect volumeRect;
+    public float nowvalue = 0;
+    public Rect rRect;
+    
+    
     private void Awake()
     {
         instance = this;
@@ -39,7 +44,13 @@ public class a3 : MonoBehaviour
         if (GUI.Button(rect3, "关闭"))
         {
             hideme();
-            a1.showme();
+            start.showme();
+        }
+        nowvalue = GUI.HorizontalSlider(volumeRect, nowvalue, 0, 100);
+        if (GUI.Button(rRect, "返回上一级"))
+        {
+            hideme();
+            start.showme();
         }
     }
 }

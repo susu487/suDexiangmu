@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class a1 : MonoBehaviour
+public class start : MonoBehaviour
 {
-    private static a1 instance;
+    private static start instance;
     public static void showme()
     {
         if (instance != null)
@@ -44,13 +44,18 @@ public class a1 : MonoBehaviour
         //开始，结束，设置
         if (GUI.Button(rect1, "开始游戏", buttonstyle))
         {
-            SceneManager.LoadScene("GameScene");
+            hideme();
+            login.showme();
+
         }
-        GUI.Button(rect2, "退出游戏", buttonstyle);
+        if(GUI.Button(rect2, "退出游戏", buttonstyle))
+        {
+            hideme() ;
+        }
         if(GUI.Button(rect3, "设置游戏", buttonstyle))
         {
             
-            a3.showme();
+            shezhi.showme();
             Debug.Log("显示设置界面");
             hideme();
             Debug.Log("隐藏开始界面");
