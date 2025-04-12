@@ -196,8 +196,8 @@ TextureImporter:
         y: 1773
         width: 275
         height: 275
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,7 +318,7 @@ TextureImporter:
       name: RobotBoyWalk06
       rect:
         serializedVersion: 2
-        x: 1650
+        x: 1653
         y: 1773
         width: 275
         height: 275
@@ -527,7 +527,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0dcde46a5023d0145b5aee4d33e837f5
     internalID: 0
     vertices: []
     indices: 
