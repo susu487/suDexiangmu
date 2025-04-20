@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &730072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
       m_ScaledBackgrounds: []
       m_TextColor: {r: 0.9559748, g: 0.41786313, b: 0.70690775, a: 1}
     m_Hover:
-      m_Background: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+      m_Background: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 3}
       m_ScaledBackgrounds: []
       m_TextColor: {r: 0.93710685, g: 0.44977528, b: 0.44497833, a: 1}
     m_Active:
@@ -416,6 +416,7 @@ GameObject:
   - component: {fileID: 488743823}
   - component: {fileID: 488743822}
   - component: {fileID: 488743826}
+  - component: {fileID: 488743827}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -531,6 +532,18 @@ MonoBehaviour:
     y: 300
     width: 50
     height: 50
+--- !u!114 &488743827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488743821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef35c359c9c3ad641b7854a6e4bbaf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +676,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1445273687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -738,7 +751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1643680567
 MonoBehaviour:
   m_ObjectHideFlags: 0
